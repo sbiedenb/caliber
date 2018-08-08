@@ -7,7 +7,7 @@ phases:
             - mvn install:install-file -Dfile="ojdbc6.jar" -DgroupId="com.oracle" -DartifactId="ojdbc6" -Dversion="11.2.0" -Dpackaging="jar"
     build:
         commands:
-            - mvn clean package -Dmaven.test.failure.ignore=true -f caliber/pom.xml
+            - mvn clean package -f caliber/pom.xml
 artifacts:
     files:
         - caliber/target/caliber.war
