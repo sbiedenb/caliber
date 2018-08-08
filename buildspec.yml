@@ -1,5 +1,11 @@
 version: 0.2
 
+env: 
+  parameter-store: 
+    CALIBER_DB_PASS: CALIBER_DB_PASS
+    CALIBER_DB_URL: CALIBER_DB_URL
+    CALIBER_DB_USER: CALIBER_DB_USER
+
 phases:
     install:
         commands:
